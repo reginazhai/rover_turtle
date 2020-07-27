@@ -1,0 +1,13 @@
+<launch>
+	<!-- Launch turtlebot3_map.launch-->
+	<include file="$(find turtlebot3_gazebo)/launch/turtlebot3_world.launch">
+	</include>
+
+	<!-- Launch rtabmap_ros-->
+	<include file="$(find rtabmap_ros)/launch/demo/demo_turtlebot3_navigation.launch">
+	</include>
+
+	<!-- Launch follow_waypoints-->
+	<include file="$(find follow_waypoints)/launch/follow_waypoints.launch">
+	</include>
+</launch>
